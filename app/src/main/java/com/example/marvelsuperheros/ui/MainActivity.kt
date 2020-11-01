@@ -9,8 +9,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.container, SuperHeroesFragment.createInstance())
-        transaction.commit()
+        if(savedInstanceState == null) {
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.container, SuperHeroesFragment.createInstance())
+            transaction.commit()
+        }
     }
 }
