@@ -1,0 +1,34 @@
+ext.versions = [
+        "room_version"      :       "2.2.5",
+        "multidex_version"  :       "2.0.1",
+        "coroutine_version" :       "1.4.0",
+        "lifecycle_version" :       "2.3.0-beta01",
+        "swipe_rv_version"  :       "0.6.0",
+        "material_version"  :       "1.3.0-alpha03",
+        "picasso_version"   :       "2.71828"
+]
+ext.deps = [
+        // ROOM
+        "room_runtime"      :       "androidx.room:room-runtime:${versions.room_version}",
+        "room_compiler"     :       "androidx.room:room-compiler:${versions.room_version}",
+        "room_ktx"          :       "androidx.room:room-ktx:${versions.room_version}",
+        "room_test"         :       "androidx.room:room-testing:${versions.room_version}",
+
+        // MULTI DEX
+        "multidex"          :       "androidx.multidex:multidex:${versions.multidex_version}",
+
+        // COROUTINE
+        "coroutine_core"    :       "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutine_version}",
+
+        // LIFECYCLE
+        "lifecycle_vm"      :       "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle_version}",
+
+        // SWIPE RV
+        "swipe_rv"          :       "com.ernestoyaquello.dragdropswiperecyclerview:drag-drop-swipe-recyclerview:${versions.swipe_rv_version}",
+
+        // MATERIAL
+        "material"          :       "com.google.android.material:material:${versions.material_version}",
+
+        // PICASSO
+        "picasso"           :       "com.squareup.picasso:picasso:${versions.picasso_version}"
+]

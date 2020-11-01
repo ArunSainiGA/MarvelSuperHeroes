@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MarvelSuperHeros</string>
+
+    <string name="hero_deleted">Deleted successfully.</string>
+    <string name="hero_added">Hero Added successfully.</string>
+
+    <string name="loading">Please wait...</string>
+
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+
+    <string name="hint_name">Name</string>
+    <string name="hint_profile_picture">Profile Picture URL</string>
+    <string name="hint_superpowers">Superpowers</string>
+    <string name="submit">Submit</string>
+
+</resources>
