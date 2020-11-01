@@ -1,5 +1,6 @@
 package com.example.marvelsuperheros.ui
 
+import android.database.sqlite.SQLiteConstraintException
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -35,7 +36,10 @@ class AddSuperHeroViewModel constructor(private val addHeroUseCase: AddHeroUseCa
                         Result.Loading -> viewState.value = ViewState.Loading(true)
                         is Result.Error -> {
                             viewState.value = ViewState.Loading(false)
-                            viewState.value = ViewState.Error(result.exception.message ?: "There was an error fetching heroes.")
+                            if(result.exception is SQLiteConstraintException)
+                                viewState.value = ViewState.Error("This superhero is already part of team.")
+                            else
+                                viewState.value = ViewState.Error(result.exception.message ?: "There was an error fetching heroes.")
                         }
                         is Result.Success -> {
                             viewState.value = ViewState.Loading(false)
